@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Am Alten Schlachthof">
 <meta property="og:description" content="Back to OriginFrom the genius Hexo Project I knew about YAML and Markdown as Markup Languages. To make blogging back to its origin, Markdown and YAML are really awesome for bloggers with geek spirit,">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-31T13:59:02.220Z">
+<meta property="og:updated_time" content="2019-10-31T14:18:15.216Z">
 <meta name="twitter:card" content="summary">
     
     
@@ -101,7 +101,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Back-to-Origin"><span class="toc-number">1.</span> <span class="toc-text">Back to Origin</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Beloved-WordPress"><span class="toc-number">2.</span> <span class="toc-text">Beloved WordPress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-day-I-met-Hexo"><span class="toc-number">3.</span> <span class="toc-text">The day I met Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-pages-and-deploy-them-with-two-or-three-commands"><span class="toc-number">3.1.</span> <span class="toc-text">Generate pages and deploy them with two or three commands:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Or-just-so-to-achieve-the-same-thing-with-less-tapping"><span class="toc-number">3.2.</span> <span class="toc-text">Or just so to achieve the same thing with less tapping:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Materials-for-Markdown"><span class="toc-number">4.</span> <span class="toc-text">Materials for Markdown:</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Back-to-Origin"><span class="toc-number">1.</span> <span class="toc-text">Back to Origin</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Beloved-WordPress"><span class="toc-number">2.</span> <span class="toc-text">Beloved WordPress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-day-I-met-Hexo"><span class="toc-number">3.</span> <span class="toc-text">The day I met Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-and-deploy"><span class="toc-number">3.1.</span> <span class="toc-text">Generate and deploy:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-less-tapping"><span class="toc-number">3.2.</span> <span class="toc-text">With less tapping:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Materials-for-Markdown"><span class="toc-number">4.</span> <span class="toc-text">Materials for Markdown:</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -127,7 +127,7 @@
       
         <time datetime="2019-10-31T12:52:48.000Z" itemprop="datePublished">2019-10-31</time>
         
-        (Updated: <time datetime="2019-10-31T13:59:02.220Z" itemprop="dateModified">2019-10-31</time>)
+        (Updated: <time datetime="2019-10-31T14:18:15.216Z" itemprop="dateModified">2019-10-31</time>)
         
       
     </div>
@@ -154,10 +154,10 @@
 <p>For their good functionality and possibility for expansion, based on “the best programming language in the world” - PHP. And at the same time it caused also high CPU and Memory usage quote on my little VPS on AWS.</p>
 <h2 id="The-day-I-met-Hexo"><a href="#The-day-I-met-Hexo" class="headerlink" title="The day I met Hexo"></a>The day I met Hexo</h2><p>This situation remained so, until I found a clean and beautiful blog based on static pages, which used Hexo based on Node.JS as page generator, Markdown for contents and YAML for configurations.</p>
 <p>Hexo makes it possible to write something in original Markdown direct with VIM or Sublime Text. </p>
-<h3 id="Generate-pages-and-deploy-them-with-two-or-three-commands"><a href="#Generate-pages-and-deploy-them-with-two-or-three-commands" class="headerlink" title="Generate pages and deploy them with two or three commands:"></a>Generate pages and deploy them with two or three commands:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-and-deploy"><a href="#Generate-and-deploy" class="headerlink" title="Generate and deploy:"></a>Generate and deploy:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>to clean the templates files which generated during the last round generation of static pages, to generate new static pages with the newest changes of posts and pages and to deploy it to server, in my case to my GitHub Page repository.</p>
-<h3 id="Or-just-so-to-achieve-the-same-thing-with-less-tapping"><a href="#Or-just-so-to-achieve-the-same-thing-with-less-tapping" class="headerlink" title="Or just so to achieve the same thing with less tapping:"></a>Or just so to achieve the same thing with less tapping:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<h3 id="With-less-tapping"><a href="#With-less-tapping" class="headerlink" title="With less tapping:"></a>With less tapping:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
 
 <h2 id="Materials-for-Markdown"><a href="#Materials-for-Markdown" class="headerlink" title="Materials for Markdown:"></a>Materials for Markdown:</h2><ul>
 <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#" target="_blank" rel="noopener">Markdown Cheatsheet</a></li>
@@ -196,7 +196,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Back-to-Origin"><span class="toc-number">1.</span> <span class="toc-text">Back to Origin</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Beloved-WordPress"><span class="toc-number">2.</span> <span class="toc-text">Beloved WordPress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-day-I-met-Hexo"><span class="toc-number">3.</span> <span class="toc-text">The day I met Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-pages-and-deploy-them-with-two-or-three-commands"><span class="toc-number">3.1.</span> <span class="toc-text">Generate pages and deploy them with two or three commands:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Or-just-so-to-achieve-the-same-thing-with-less-tapping"><span class="toc-number">3.2.</span> <span class="toc-text">Or just so to achieve the same thing with less tapping:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Materials-for-Markdown"><span class="toc-number">4.</span> <span class="toc-text">Materials for Markdown:</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Back-to-Origin"><span class="toc-number">1.</span> <span class="toc-text">Back to Origin</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Beloved-WordPress"><span class="toc-number">2.</span> <span class="toc-text">Beloved WordPress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-day-I-met-Hexo"><span class="toc-number">3.</span> <span class="toc-text">The day I met Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-and-deploy"><span class="toc-number">3.1.</span> <span class="toc-text">Generate and deploy:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-less-tapping"><span class="toc-number">3.2.</span> <span class="toc-text">With less tapping:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Materials-for-Markdown"><span class="toc-number">4.</span> <span class="toc-text">Materials for Markdown:</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
