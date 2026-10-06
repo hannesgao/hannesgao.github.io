@@ -194,6 +194,7 @@ body:has(.lang-radio:focus-visible) .lang-switch {
 .btn--icon {
   width: 40px;
   padding: 0;
+  gap: 0;
 }
 
 .btn--icon .icon {
