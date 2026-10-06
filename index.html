@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      name="description"
+      content="Hannes Gao – Softwareentwickler in Karlsruhe. Open-Source-Projekte wie Kaufland Extra Finder."
+    />
+    <title>Hannes Gao</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg class="sprite" aria-hidden="true"><symbol id="i-mail" viewBox="0 -960 960 960"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></symbol><symbol id="i-favorite" viewBox="0 -960 960 960"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></symbol><symbol id="i-person" viewBox="0 -960 960 960"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></symbol><symbol id="i-code" viewBox="0 -960 960 960"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></symbol><symbol id="i-open_in_new" viewBox="0 -960 960 960"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></symbol><symbol id="i-info" viewBox="0 -960 960 960"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></symbol><symbol id="i-verified_user" viewBox="0 -960 960 960"><path d="m438-338 226-226-57-57-169 169-84-84-57 57 141 141Zm42 258q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/></symbol><symbol id="i-github" viewBox="0 0 20 20"><path d="M10 2.5a7.5 7.5 0 0 0-2.37 14.62c.37.07.51-.16.51-.36v-1.3c-2.09.45-2.53-1-2.53-1-.34-.87-.83-1.1-.83-1.1-.68-.46.05-.45.05-.45.75.05 1.15.77 1.15.77.67 1.14 1.75.81 2.18.62.07-.48.26-.81.47-1-1.67-.19-3.42-.83-3.42-3.7 0-.82.29-1.49.77-2.01-.08-.19-.33-.95.07-1.98 0 0 .63-.2 2.06.77a7.2 7.2 0 0 1 3.76 0c1.43-.97 2.06-.77 2.06-.77.4 1.03.15 1.79.07 1.98.48.52.77 1.19.77 2.01 0 2.88-1.75 3.51-3.43 3.7.27.23.51.69.51 1.39v2.06c0 .2.14.44.52.36A7.5 7.5 0 0 0 10 2.5Z"/></symbol></svg>
+
+    <!-- Language switch without JavaScript: the checked radio decides which [lang] blocks show. -->
+    <input class="lang-radio" type="radio" name="lang" id="lang-de" checked />
+    <input class="lang-radio" type="radio" name="lang" id="lang-en" />
+
+    <div class="page">
+      <header class="hero">
+        <div class="hero__top">
+          <span class="avatar" aria-hidden="true">HG</span>
+          <nav class="lang-switch" aria-label="Sprache / Language">
+            <label for="lang-de" lang="de">Deutsch</label>
+            <label for="lang-en" lang="en">English</label>
+          </nav>
+        </div>
+        <h1 class="hero__name">Hannes Gao</h1>
+        <p class="hero__role" lang="de">Softwareentwickler · Karlsruhe</p>
+        <p class="hero__role" lang="en">Software developer · Karlsruhe</p>
+        <div class="hero__links">
+          <a class="btn btn--filled" href="mailto:me@hannesgao.de"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>me@hannesgao.de</a>
+          <a class="btn btn--outlined" href="https://github.com/hannesgao" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+          <a class="btn btn--sponsor" href="https://github.com/sponsors/hannesgao" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-favorite"/></svg>Sponsor</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="card">
+          <h2 class="card__title" id="about-de" lang="de"><svg class="icon" aria-hidden="true"><use href="#i-person"/></svg>Über mich</h2>
+          <h2 class="card__title" id="about-en" lang="en"><svg class="icon" aria-hidden="true"><use href="#i-person"/></svg>About me</h2>
+          <div lang="de">
+            <p>
+              Ich habe Informationswirtschaft am Karlsruher Institut für Technologie (KIT) studiert
+              und entwickle Software rund ums Web – vom Frontend über kleine Backends bis zur
+              Automatisierung. In meiner Freizeit baue ich kleine Open-Source-Werkzeuge, die mir
+              und anderen im Alltag helfen.
+            </p>
+          </div>
+          <div lang="en">
+            <p>
+              I studied Information Engineering and Management at the Karlsruhe Institute of
+              Technology (KIT) and build software for the web – from frontends and small backends
+              to automation. In my spare time I write small open-source tools that help me and
+              others in everyday life.
+            </p>
+          </div>
+          <ul class="chips" aria-label="Technologien / Technologies">
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>HTML &amp; CSS</li>
+            <li>Node.js</li>
+            <li>Solidity</li>
+            <li>GitHub Actions</li>
+            <li>Docker</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card__title" id="projects-de" lang="de"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Projekte</h2>
+          <h2 class="card__title" id="projects-en" lang="en"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Projects</h2>
+          <ul class="projects">
+            <li class="project project--featured">
+              <div class="project__head">
+                <h3>Kaufland Extra Finder</h3>
+                <span class="tag">TypeScript · Python</span>
+              </div>
+              <p lang="de">
+                Findet Kaufland-Filialen mit Extra-Angebote-Prospekt in der Nähe einer
+                Postleitzahl. Die Daten werden mehrmals pro Woche automatisch aktualisiert.
+              </p>
+              <p lang="en">
+                Finds Kaufland stores with an Extra-Angebote leaflet near a German postcode. The
+                data is updated automatically several times a week.
+              </p>
+              <div class="project__links">
+                <a class="btn btn--filled btn--sm" href="https://hannesgao.github.io/Kaufland-Extra-Finder/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-open_in_new"/></svg><span lang="de">Zur Website</span><span lang="en">Open website</span></a>
+                <a class="btn btn--outlined btn--sm" href="https://github.com/hannesgao/Kaufland-Extra-Finder" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span lang="de">Quellcode</span><span lang="en">Source</span></a>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__head">
+                <h3>Origamio</h3>
+                <span class="tag">TypeScript</span>
+              </div>
+              <p lang="de">Ein Origami-Simulator.</p>
+              <p lang="en">An origami simulator.</p>
+              <div class="project__links">
+                <a class="btn btn--outlined btn--sm" href="https://github.com/hannesgao/Origamio" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span lang="de">Quellcode</span><span lang="en">Source</span></a>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__head">
+                <h3>Payback Helper Script</h3>
+                <span class="tag">JavaScript</span>
+              </div>
+              <p lang="de">Ein Hilfsskript für Payback.</p>
+              <p lang="en">A helper script for Payback.</p>
+              <div class="project__links">
+                <a class="btn btn--outlined btn--sm" href="https://github.com/hannesgao/Payback-Helper-Script" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span lang="de">Quellcode</span><span lang="en">Source</span></a>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__head">
+                <h3>The DeFi Learning Path</h3>
+                <span class="tag">Solidity</span>
+              </div>
+              <p lang="de">
+                Notizen, Bücher, Tutorials und Werkzeuge für den Einstieg in DeFi und Smart
+                Contracts.
+              </p>
+              <p lang="en">
+                Notes, books, tutorials and tools for getting into DeFi and smart contracts.
+              </p>
+              <div class="project__links">
+                <a class="btn btn--outlined btn--sm" href="https://github.com/hannesgao/The-DeFi-Learning-Path-of-Hannes" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span lang="de">Quellcode</span><span lang="en">Source</span></a>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__head">
+                <h3>DOI2LaTeX</h3>
+                <span class="tag">Python</span>
+              </div>
+              <p lang="de">Wandelt DOI-Listen über die Crossref-API in LaTeX-Literaturangaben um.</p>
+              <p lang="en">Turns DOI lists into LaTeX references using the Crossref API.</p>
+              <div class="project__links">
+                <a class="btn btn--outlined btn--sm" href="https://github.com/hannesgao/DOI2LaTeX" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span lang="de">Quellcode</span><span lang="en">Source</span></a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <p class="legal-note" lang="en">
+          The legal notice (Impressum) and the privacy policy (Datenschutzerklärung) below are in
+          German, as required by German law.
+        </p>
+
+        <section class="card card--legal" id="impressum" aria-labelledby="impressum-title" lang="de">
+          <h2 class="card__title" id="impressum-title"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>Impressum</h2>
+          <div class="legal-grid">
+            <div>
+              <h3>Anbieter</h3>
+              <p>Hannes Gao<br />Striederstr. 23<br />76131 Karlsruhe<br />Deutschland</p>
+            </div>
+            <div>
+              <h3>Kontakt</h3>
+              <p>E-Mail: <a href="mailto:me@hannesgao.de">me@hannesgao.de</a></p>
+            </div>
+          </div>
+          <h3>Hinweis</h3>
+          <p>
+            Dies ist eine private, nicht-kommerzielle Website ohne Werbung. Für die Inhalte
+            verlinkter Websites, einschließlich meiner eigenen Projektseiten mit eigenem Impressum,
+            ist der jeweilige Anbieter verantwortlich. Bei Bekanntwerden von Rechtsverletzungen
+            entferne ich entsprechende Links umgehend.
+          </p>
+        </section>
+
+        <section class="card card--legal" id="datenschutz" aria-labelledby="datenschutz-title" lang="de">
+          <h2 class="card__title" id="datenschutz-title"><svg class="icon" aria-hidden="true"><use href="#i-verified_user"/></svg>Datenschutzerklärung</h2>
+          <p class="meta">Stand: Oktober 2026</p>
+          <h3>Verantwortlicher</h3>
+          <p>Hannes Gao, Striederstr. 23, 76131 Karlsruhe, E-Mail: <a href="mailto:me@hannesgao.de">me@hannesgao.de</a></p>
+          <h3>Kurz gesagt</h3>
+          <p>
+            Diese Seite setzt keine Cookies, verwendet keine Analyse- oder Tracking-Dienste, zeigt
+            keine Werbung und lädt keine Schriftarten, Skripte oder sonstigen Inhalte von Dritten.
+            Ich selbst erhebe und speichere keine personenbezogenen Daten.
+          </p>
+          <h3>Hosting über GitHub Pages</h3>
+          <p>
+            Diese Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88
+            Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf verarbeitet GitHub
+            technisch notwendige Daten, insbesondere Ihre IP-Adresse, Datum und Uhrzeit, die
+            aufgerufene Adresse, den Referrer sowie Browser- und Systeminformationen. Dies dient der
+            Auslieferung und der Sicherheit der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f
+            DSGVO; mein berechtigtes Interesse liegt in einer sicheren und zuverlässigen
+            Bereitstellung. Dabei können Daten in die USA übermittelt werden. GitHub ist nach dem
+            EU-US Data Privacy Framework zertifiziert; für die Übermittlung gilt damit der
+            Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Weitere Informationen:
+            <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a>.
+          </p>
+          <h3>Links zu anderen Websites</h3>
+          <p>
+            Diese Seite verlinkt auf GitHub (einschließlich GitHub Sponsors) und auf meine
+            Projektseiten. Erst wenn Sie einen Link anklicken, werden Daten an den jeweiligen
+            Anbieter übertragen; es gelten dessen Datenschutzbestimmungen. Projektseiten unter
+            dieser Adresse, etwa
+            <a href="https://hannesgao.github.io/Kaufland-Extra-Finder/datenschutz.html" target="_blank" rel="noopener noreferrer">Kaufland Extra Finder</a>,
+            haben eine eigene Datenschutzerklärung.
+          </p>
+          <h3>Ihre Rechte</h3>
+          <p>
+            Sie haben nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16),
+            Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit
+            (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f
+            (Art. 21). Da ich selbst keine personenbezogenen Daten speichere, betreffen diese Rechte
+            vor allem die Verarbeitung durch GitHub; wenden Sie sich dafür gern an mich oder direkt
+            an GitHub. Sie können sich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren
+            (Art. 77 DSGVO), etwa bei der für mich zuständigen Behörde: Der Landesbeauftragte für den
+            Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20,
+            70173 Stuttgart,
+            <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener noreferrer">www.baden-wuerttemberg.datenschutz.de</a>.
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>© 2026 Hannes Gao</span>
+        <nav aria-label="Rechtliches">
+          <a href="#impressum">Impressum</a>
+          <a href="#datenschutz">Datenschutz</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
