@@ -190,6 +190,27 @@ body:has(.lang-radio:focus-visible) .lang-switch {
   font-size: 0.8125rem;
 }
 
+/* Icon-only buttons (GitHub, LinkedIn, X) */
+.btn--icon {
+  width: 40px;
+  padding: 0;
+}
+
+.btn--icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* The three icon buttons always wrap together. */
+.hero__social {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.hero__sponsor {
+  margin-left: auto;
+}
+
 .btn--filled {
   background: var(--primary);
   color: var(--on-primary);
@@ -378,9 +399,10 @@ main {
   font-size: 0.875rem;
 }
 
-/* Collapsible legal sections: closed until the heading is clicked. */
+/* Collapsible legal sections: closed until the heading is clicked. The flex row sits inside
+   <summary> (a block), so the expand button stays at the right edge in every browser. */
 details.card--legal > summary {
-  margin: 0;
+  display: block;
   list-style: none;
   cursor: pointer;
   border-radius: 12px;
@@ -388,6 +410,10 @@ details.card--legal > summary {
 
 details.card--legal > summary::-webkit-details-marker {
   display: none;
+}
+
+details.card--legal > summary .card__title {
+  margin: 0;
 }
 
 details.card--legal > summary:focus-visible {
@@ -401,16 +427,35 @@ details.card--legal > summary:focus-visible {
   overflow-wrap: normal;
 }
 
-.card__title .chevron {
+/* Round expand button, flush with the card's right content edge. */
+.chevron {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  border-radius: 999px;
+  background: var(--surface-container);
+  color: var(--on-surface-variant);
+}
+
+.card__title .chevron .icon {
   width: 24px;
   height: 24px;
   padding: 0;
+  border-radius: 0;
   background: none;
-  color: var(--on-surface-variant);
+  color: inherit;
   transition: transform 150ms ease;
 }
 
-details[open] > summary .chevron {
+details.card--legal > summary:hover .chevron {
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+
+details[open] > summary .chevron .icon {
   transform: rotate(180deg);
 }
 
