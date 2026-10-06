@@ -378,6 +378,46 @@ main {
   font-size: 0.875rem;
 }
 
+/* Collapsible legal sections: closed until the heading is clicked. */
+details.card--legal > summary {
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+details.card--legal > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.card--legal > summary:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.card__summary-text {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: normal;
+}
+
+.card__title .chevron {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: none;
+  color: var(--on-surface-variant);
+  transition: transform 150ms ease;
+}
+
+details[open] > summary .chevron {
+  transform: rotate(180deg);
+}
+
+details.card--legal > .card__body {
+  margin-top: 16px;
+}
+
 /* ---------- Footer ---------- */
 .footer {
   display: flex;
